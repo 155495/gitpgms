@@ -105,3 +105,15 @@ else
 fi
 echo sum=$sum1
 ```
+# String Palindrome
+```shell
+echo "enter the string "
+read name
+name1=$(echo $name | rev)
+if [ $name = $name1 ]
+then
+echo "$name is palindrome"
+else
+echo "$name is not a palindrome"
+fi
+```
