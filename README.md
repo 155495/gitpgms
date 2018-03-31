@@ -124,3 +124,10 @@ read filename
 file_ext=$(echo $filename |awk -F . '{if (NF>1) {print $NF}}')
 echo filetype=$file_ext
 ```
+# Display All Files in a Directory
+```bash
+for i in `ls -a *.*`
+do
+echo "$i"
+done
+```
