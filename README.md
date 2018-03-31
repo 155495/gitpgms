@@ -38,6 +38,55 @@ a=$((a - b))
 echo After Swapping
 echo a=$a
 echo b=$b
+```
+*******************************************************
+# Factorial of a Number
+``` shell
+echo enter a number
+read a
+fact=1
+i=1
+for i in `seq 1 $a`
 
+	do
+	fact=$((fact*i))
+	done
+echo Factorial of $a = $fact
+```
+***********************************************************
+# Prime Or Not 
+``` shell
+echo Enter a number
+read a
+for i in `seq 2 $a`
+do
+	if [ $((a % i )) -eq 0 ];
+	then
+	count=$((count+1))
+	fi
+
+done
+ if [ $count -eq 1 ] 
+	then
+		echo $a is  prime
+		else
+		echo $a is not prime
+	fi
+```
+***********************************************************
+# Sum Of Digits Of A Number
+```shell
+echo enter a number
+read a
+b=$a
+i=0
+while [ $b -gt 0  ]
+do
+	i=$((i+ ( b % 10 )))
+	b=$((b/10))
+
+	
+done
+echo total sum of $a = $i
 
 ```
