@@ -23,7 +23,7 @@ echo "**************************"
 
 ```
 *********************************************************
-# Swap 2 Numbers Witout Using a Third Variable
+# Swap 2 Numbers Without Using a Third Variable
 ``` shell
 echo enter a number
 read a
