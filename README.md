@@ -152,5 +152,5 @@ if [ $a -gt $b ]
 		else
 		echo $c is larger
 		fi
-	fi
+fi
 ```
